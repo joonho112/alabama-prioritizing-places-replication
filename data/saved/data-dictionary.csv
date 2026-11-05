@@ -1,0 +1,392 @@
+file,column,type,unit,definition
+county-results.csv,county_id,character,FIPS,Five-character county FIPS code; leading zero retained.
+county-results.csv,county_name,character,,County name.
+county-results.csv,county_government_candidate,logical,,Whether the county is one of the 64 candidates; not full project eligibility.
+county-results.csv,route_status,character,,County-government route classification; does not determine municipal or project eligibility.
+county-results.csv,income_raw_estimate_points,numeric,percentile points,Published noisy estimate.
+county-results.csv,income_raw_se_points,numeric,percentile points,Published standard error.
+county-results.csv,income_posterior_mean_points,numeric,percentile points,Posterior mean under the selected measurement model.
+county-results.csv,income_posterior_median_points,numeric,percentile points,Posterior median under the selected measurement model.
+county-results.csv,income_posterior_sd_points,numeric,percentile points,Posterior standard deviation.
+county-results.csv,income_posterior_q025_points,numeric,percentile points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+county-results.csv,income_posterior_q975_points,numeric,percentile points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+county-results.csv,income_posterior_interval_width_points,numeric,percentile points,Upper minus lower endpoint of the separate-criterion 95% interval.
+county-results.csv,income_shrinkage_signed_points,numeric,percentile points,Posterior mean minus published estimate; not change over time.
+county-results.csv,income_posterior_fit_id,character,,Selected source fit identifier.
+county-results.csv,incarceration_raw_estimate_points,numeric,percentage points,Published noisy estimate.
+county-results.csv,incarceration_raw_se_points,numeric,percentage points,Published standard error.
+county-results.csv,incarceration_posterior_mean_points,numeric,percentage points,Posterior mean under the selected measurement model.
+county-results.csv,incarceration_posterior_median_points,numeric,percentage points,Posterior median under the selected measurement model.
+county-results.csv,incarceration_posterior_sd_points,numeric,percentage points,Posterior standard deviation.
+county-results.csv,incarceration_posterior_q025_points,numeric,percentage points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+county-results.csv,incarceration_posterior_q975_points,numeric,percentage points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+county-results.csv,incarceration_posterior_interval_width_points,numeric,percentage points,Upper minus lower endpoint of the separate-criterion 95% interval.
+county-results.csv,incarceration_shrinkage_signed_points,numeric,percentage points,Posterior mean minus published estimate; not change over time.
+county-results.csv,incarceration_posterior_fit_id,character,,Selected source fit identifier.
+county-results.csv,grade_B0,integer,ordinal band,"Band in B0, the report that withholds all pair comparisons."
+county-results.csv,grade_B1,integer,ordinal band,"Band in B1, based on fixed quintiles of published-estimate rank scores; exact score ties can merge nominal quintile groups."
+county-results.csv,grade_B2,integer,ordinal band,"Band in B2, based on fixed quintiles of posterior-mean rank scores; exact score ties can merge nominal quintile groups."
+county-results.csv,grade_B3,integer,ordinal band,"Band in B3, obtained by optimal cuts of the exact posterior-expected-rank order."
+county-results.csv,grade_P,integer,ordinal band,Central common report band; missing outside the relevant candidate set.
+county-results.csv,matched_received_application_count,integer,applications,Received applications whose recorded county name matches this county.
+county-results.csv,matched_county_fund_application_count,integer,applications,Matched applications in the County Fund section.
+county-results.csv,matched_requested_cents,integer,US cents,Exact total requested cents for matched applications.
+county-results.csv,matched_requested_usd,numeric,USD,Requested amount for matched applications; not an award or project cost.
+tract-results.csv,tract_id,character,GEOID,Eleven-character 2010 tract GEOID; leading zero retained.
+tract-results.csv,county_id,character,FIPS,Five-character county FIPS code; leading zero retained.
+tract-results.csv,coverage_status,character,,"Historical source-input coverage: complete input, incomplete outcome row, or covariate key without an outcome row."
+tract-results.csv,model_eligible,logical,,Usable observed estimates and positive standard errors for the tract models.
+tract-results.csv,posterior_available,logical,,Whether both criterion posteriors are available.
+tract-results.csv,in_pooled90,logical,,Membership in the fixed 90-tract pilot decision universe.
+tract-results.csv,income_raw_estimate_points,numeric,percentile points,Published noisy estimate.
+tract-results.csv,income_raw_se_points,numeric,percentile points,Published standard error.
+tract-results.csv,income_posterior_mean_points,numeric,percentile points,Posterior mean under the selected measurement model.
+tract-results.csv,income_posterior_median_points,numeric,percentile points,Posterior median under the selected measurement model.
+tract-results.csv,income_posterior_sd_points,numeric,percentile points,Posterior standard deviation.
+tract-results.csv,income_posterior_q025_points,numeric,percentile points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+tract-results.csv,income_posterior_q975_points,numeric,percentile points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+tract-results.csv,income_posterior_interval_width_points,numeric,percentile points,Upper minus lower endpoint of the separate-criterion 95% interval.
+tract-results.csv,income_shrinkage_signed_points,numeric,percentile points,Posterior mean minus published estimate; not change over time.
+tract-results.csv,income_posterior_fit_id,character,,Selected source fit identifier.
+tract-results.csv,incarceration_raw_estimate_points,numeric,percentage points,Published noisy estimate.
+tract-results.csv,incarceration_raw_se_points,numeric,percentage points,Published standard error.
+tract-results.csv,incarceration_posterior_mean_points,numeric,percentage points,Posterior mean under the selected measurement model.
+tract-results.csv,incarceration_posterior_median_points,numeric,percentage points,Posterior median under the selected measurement model.
+tract-results.csv,incarceration_posterior_sd_points,numeric,percentage points,Posterior standard deviation.
+tract-results.csv,incarceration_posterior_q025_points,numeric,percentage points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+tract-results.csv,incarceration_posterior_q975_points,numeric,percentage points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+tract-results.csv,incarceration_posterior_interval_width_points,numeric,percentage points,Upper minus lower endpoint of the separate-criterion 95% interval.
+tract-results.csv,incarceration_shrinkage_signed_points,numeric,percentage points,Posterior mean minus published estimate; not change over time.
+tract-results.csv,incarceration_posterior_fit_id,character,,Selected source fit identifier.
+tract-results.csv,grade_B0,integer,ordinal band,"Band in B0, the report that withholds all pair comparisons."
+tract-results.csv,grade_B1,integer,ordinal band,"Band in B1, based on fixed quintiles of published-estimate rank scores; exact score ties can merge nominal quintile groups."
+tract-results.csv,grade_B2,integer,ordinal band,"Band in B2, based on fixed quintiles of posterior-mean rank scores; exact score ties can merge nominal quintile groups."
+tract-results.csv,grade_B3,integer,ordinal band,"Band in B3, obtained by optimal cuts of the exact posterior-expected-rank order."
+tract-results.csv,grade_P,integer,ordinal band,Central common report band; missing outside the relevant candidate set.
+pilot90-tract-results.csv,tract_id,character,GEOID,Eleven-character 2010 tract GEOID; leading zero retained.
+pilot90-tract-results.csv,county_id,character,FIPS,Five-character county FIPS code; leading zero retained.
+pilot90-tract-results.csv,coverage_status,character,,"Historical source-input coverage: complete input, incomplete outcome row, or covariate key without an outcome row."
+pilot90-tract-results.csv,model_eligible,logical,,Usable observed estimates and positive standard errors for the tract models.
+pilot90-tract-results.csv,posterior_available,logical,,Whether both criterion posteriors are available.
+pilot90-tract-results.csv,in_pooled90,logical,,Membership in the fixed 90-tract pilot decision universe.
+pilot90-tract-results.csv,income_raw_estimate_points,numeric,percentile points,Published noisy estimate.
+pilot90-tract-results.csv,income_raw_se_points,numeric,percentile points,Published standard error.
+pilot90-tract-results.csv,income_posterior_mean_points,numeric,percentile points,Posterior mean under the selected measurement model.
+pilot90-tract-results.csv,income_posterior_median_points,numeric,percentile points,Posterior median under the selected measurement model.
+pilot90-tract-results.csv,income_posterior_sd_points,numeric,percentile points,Posterior standard deviation.
+pilot90-tract-results.csv,income_posterior_q025_points,numeric,percentile points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+pilot90-tract-results.csv,income_posterior_q975_points,numeric,percentile points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+pilot90-tract-results.csv,income_posterior_interval_width_points,numeric,percentile points,Upper minus lower endpoint of the separate-criterion 95% interval.
+pilot90-tract-results.csv,income_shrinkage_signed_points,numeric,percentile points,Posterior mean minus published estimate; not change over time.
+pilot90-tract-results.csv,income_posterior_fit_id,character,,Selected source fit identifier.
+pilot90-tract-results.csv,incarceration_raw_estimate_points,numeric,percentage points,Published noisy estimate.
+pilot90-tract-results.csv,incarceration_raw_se_points,numeric,percentage points,Published standard error.
+pilot90-tract-results.csv,incarceration_posterior_mean_points,numeric,percentage points,Posterior mean under the selected measurement model.
+pilot90-tract-results.csv,incarceration_posterior_median_points,numeric,percentage points,Posterior median under the selected measurement model.
+pilot90-tract-results.csv,incarceration_posterior_sd_points,numeric,percentage points,Posterior standard deviation.
+pilot90-tract-results.csv,incarceration_posterior_q025_points,numeric,percentage points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+pilot90-tract-results.csv,incarceration_posterior_q975_points,numeric,percentage points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+pilot90-tract-results.csv,incarceration_posterior_interval_width_points,numeric,percentage points,Upper minus lower endpoint of the separate-criterion 95% interval.
+pilot90-tract-results.csv,incarceration_shrinkage_signed_points,numeric,percentage points,Posterior mean minus published estimate; not change over time.
+pilot90-tract-results.csv,incarceration_posterior_fit_id,character,,Selected source fit identifier.
+pilot90-tract-results.csv,grade_B0,integer,ordinal band,"Band in B0, the report that withholds all pair comparisons."
+pilot90-tract-results.csv,grade_B1,integer,ordinal band,"Band in B1, based on fixed quintiles of published-estimate rank scores; exact score ties can merge nominal quintile groups."
+pilot90-tract-results.csv,grade_B2,integer,ordinal band,"Band in B2, based on fixed quintiles of posterior-mean rank scores; exact score ties can merge nominal quintile groups."
+pilot90-tract-results.csv,grade_B3,integer,ordinal band,"Band in B3, obtained by optimal cuts of the exact posterior-expected-rank order."
+pilot90-tract-results.csv,grade_P,integer,ordinal band,Central common report band; missing outside the relevant candidate set.
+first-band-tracts.csv,tract_id,character,GEOID,Eleven-character 2010 tract GEOID; leading zero retained.
+first-band-tracts.csv,county_id,character,FIPS,Five-character county FIPS code; leading zero retained.
+first-band-tracts.csv,coverage_status,character,,"Historical source-input coverage: complete input, incomplete outcome row, or covariate key without an outcome row."
+first-band-tracts.csv,model_eligible,logical,,Usable observed estimates and positive standard errors for the tract models.
+first-band-tracts.csv,posterior_available,logical,,Whether both criterion posteriors are available.
+first-band-tracts.csv,in_pooled90,logical,,Membership in the fixed 90-tract pilot decision universe.
+first-band-tracts.csv,income_raw_estimate_points,numeric,percentile points,Published noisy estimate.
+first-band-tracts.csv,income_raw_se_points,numeric,percentile points,Published standard error.
+first-band-tracts.csv,income_posterior_mean_points,numeric,percentile points,Posterior mean under the selected measurement model.
+first-band-tracts.csv,income_posterior_median_points,numeric,percentile points,Posterior median under the selected measurement model.
+first-band-tracts.csv,income_posterior_sd_points,numeric,percentile points,Posterior standard deviation.
+first-band-tracts.csv,income_posterior_q025_points,numeric,percentile points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+first-band-tracts.csv,income_posterior_q975_points,numeric,percentile points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+first-band-tracts.csv,income_posterior_interval_width_points,numeric,percentile points,Upper minus lower endpoint of the separate-criterion 95% interval.
+first-band-tracts.csv,income_shrinkage_signed_points,numeric,percentile points,Posterior mean minus published estimate; not change over time.
+first-band-tracts.csv,income_posterior_fit_id,character,,Selected source fit identifier.
+first-band-tracts.csv,incarceration_raw_estimate_points,numeric,percentage points,Published noisy estimate.
+first-band-tracts.csv,incarceration_raw_se_points,numeric,percentage points,Published standard error.
+first-band-tracts.csv,incarceration_posterior_mean_points,numeric,percentage points,Posterior mean under the selected measurement model.
+first-band-tracts.csv,incarceration_posterior_median_points,numeric,percentage points,Posterior median under the selected measurement model.
+first-band-tracts.csv,incarceration_posterior_sd_points,numeric,percentage points,Posterior standard deviation.
+first-band-tracts.csv,incarceration_posterior_q025_points,numeric,percentage points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+first-band-tracts.csv,incarceration_posterior_q975_points,numeric,percentage points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+first-band-tracts.csv,incarceration_posterior_interval_width_points,numeric,percentage points,Upper minus lower endpoint of the separate-criterion 95% interval.
+first-band-tracts.csv,incarceration_shrinkage_signed_points,numeric,percentage points,Posterior mean minus published estimate; not change over time.
+first-band-tracts.csv,incarceration_posterior_fit_id,character,,Selected source fit identifier.
+first-band-tracts.csv,grade_B0,integer,ordinal band,"Band in B0, the report that withholds all pair comparisons."
+first-band-tracts.csv,grade_B1,integer,ordinal band,"Band in B1, based on fixed quintiles of published-estimate rank scores; exact score ties can merge nominal quintile groups."
+first-band-tracts.csv,grade_B2,integer,ordinal band,"Band in B2, based on fixed quintiles of posterior-mean rank scores; exact score ties can merge nominal quintile groups."
+first-band-tracts.csv,grade_B3,integer,ordinal band,"Band in B3, obtained by optimal cuts of the exact posterior-expected-rank order."
+first-band-tracts.csv,grade_P,integer,ordinal band,Central common report band; missing outside the relevant candidate set.
+report-metrics.csv,universe,character,,County or tract decision universe; separate model/report comparisons.
+report-metrics.csv,method,character,,"Reporting rule B0, B1, B2, B3, or P."
+report-metrics.csv,n_entities,integer,entities,Number of candidates in this decision universe.
+report-metrics.csv,M,integer,unordered pairs,All distinct unordered candidate pairs.
+report-metrics.csv,N,integer,unordered pairs,Pairs with a disclosed direction.
+report-metrics.csv,Goccupied,integer,bands,Number of occupied ordered bands.
+report-metrics.csv,disclosure_fraction,numeric,fraction,Disclosed unordered pairs divided by all unordered pairs.
+report-metrics.csv,tau,numeric,reporting cost,Cost assigned to withholding a comparison.
+report-metrics.csv,G_max,integer,bands,Maximum permitted bands; not a required occupied count.
+report-metrics.csv,weight_income,numeric,weight,Weight on the income criterion; incarceration receives the complementary weight.
+report-metrics.csv,weight_incarceration,numeric,weight,Weight on the incarceration criterion.
+report-metrics.csv,A_saved_own_policy_Rtau,numeric,expected reporting loss,Selection-stream loss using this row’s own model and policy objective.
+report-metrics.csv,B_Ew,numeric,weighted wrong-direction count,Expected weighted cost of wrong disclosed directions on evaluation stream B.
+report-metrics.csv,B_Ew_over_N,numeric,weighted cost per disclosed pair,B wrong-direction cost divided by disclosed pairs; undefined if none.
+report-metrics.csv,B_Ew_over_M,numeric,weighted cost per all pair,B wrong-direction cost divided by all candidate pairs.
+report-metrics.csv,B_Rtau,numeric,expected reporting loss,Fixed-report B loss: wrong-direction and withholding costs averaged over all pairs.
+report-metrics.csv,B_Rtau_mcse,numeric,loss MCSE,Monte Carlo standard error of fixed-report B loss.
+report-metrics.csv,fixed_B_mcse_target,numeric,loss MCSE,Prespecified numerical integration target for fixed-report B loss.
+report-metrics.csv,fixed_B_precision_status,character,,Status of the fixed-report Monte Carlo precision target.
+report-metrics.csv,A_optimality_scope,character,,Partition/order restrictions to which the finite-A certificate applies.
+report-metrics.csv,B_difference_vs_P,numeric,loss difference,B loss of this rule minus P under the same setting.
+report-metrics.csv,B_paired_mcse_vs_P,numeric,paired MCSE,Monte Carlo standard error of the same-B paired loss contrast against P.
+report-metrics.csv,paired_mcse_target,numeric,paired MCSE,Prespecified numerical precision target for a paired loss contrast.
+report-metrics.csv,paired_precision_status,character,,Status of the paired contrast precision target.
+report-metrics.csv,identical_relations_to_P,logical,,Whether every pair relation is identical to P under the same setting.
+report-metrics.csv,relation_changes_vs_P,integer,unordered pairs,Pairs whose relation differs from P under the same setting.
+report-metrics.csv,A_solver_gap,numeric,normalized loss gap,Upper minus lower normalized reporting-risk bound for the finite-A objective; not a B-risk or population bound.
+report-metrics.csv,A_solver_upper_bound,numeric,normalized loss,Finite-A objective upper bound; not a B-risk or population bound.
+report-metrics.csv,A_solver_lower_bound,numeric,normalized loss,Finite-A objective lower bound; not a B-risk or population bound.
+report-metrics.csv,A_solver_status,character,,Reported optimization termination status.
+report-metrics.csv,B3_P_same_relations,logical,,Whether B3 and P have the same pair relations.
+report-metrics.csv,A_bound_scope,character,,Interpretation of the finite-A optimization bounds.
+report-metrics.csv,B_scope,character,,Meaning of the B evaluation; it adds no independent observed data.
+sensitivity.csv,case_id,character,,Policy or model case identifier; direction constraint is a separate exploratory case.
+sensitivity.csv,universe,character,,County or tract decision universe; separate model/report comparisons.
+sensitivity.csv,method,character,,"Reporting rule B0, B1, B2, B3, or P."
+sensitivity.csv,scenario_kind,character,,"Policy, model, or exploratory direction case."
+sensitivity.csv,scenario_id,character,,Model/direction case identifier when applicable.
+sensitivity.csv,policy_id,character,,Policy setting identifier when applicable.
+sensitivity.csv,model_id,character,,Measurement model identifier.
+sensitivity.csv,exploratory,logical,,Whether the case is the exploratory direction constraint.
+sensitivity.csv,n_entities,integer,entities,Number of candidates in this decision universe.
+sensitivity.csv,M,integer,unordered pairs,All distinct unordered candidate pairs.
+sensitivity.csv,N,integer,unordered pairs,Pairs with a disclosed direction.
+sensitivity.csv,Goccupied,integer,bands,Number of occupied ordered bands.
+sensitivity.csv,disclosure_fraction,numeric,fraction,Disclosed unordered pairs divided by all unordered pairs.
+sensitivity.csv,tau,numeric,reporting cost,Cost assigned to withholding a comparison.
+sensitivity.csv,G_max,integer,bands,Maximum permitted bands; not a required occupied count.
+sensitivity.csv,weight_income,numeric,weight,Weight on the income criterion; incarceration receives the complementary weight.
+sensitivity.csv,weight_incarceration,numeric,weight,Weight on the incarceration criterion.
+sensitivity.csv,A_saved_own_policy_Rtau,numeric,expected reporting loss,Selection-stream loss using this row’s own model and policy objective.
+sensitivity.csv,B_Rtau,numeric,expected reporting loss,Fixed-report B loss: wrong-direction and withholding costs averaged over all pairs.
+sensitivity.csv,B_Rtau_mcse,numeric,loss MCSE,Monte Carlo standard error of fixed-report B loss.
+sensitivity.csv,fixed_B_mcse_target,numeric,loss MCSE,Prespecified numerical integration target for fixed-report B loss.
+sensitivity.csv,fixed_B_precision_status,character,,Status of the fixed-report Monte Carlo precision target.
+sensitivity.csv,P_vs_centerP_tie_to_disclosure,integer,unordered pairs,Pairs withheld at center and disclosed by this report.
+sensitivity.csv,P_vs_centerP_disclosure_to_tie,integer,unordered pairs,Pairs disclosed at center and withheld by this report.
+sensitivity.csv,P_vs_centerP_direction_reversals,integer,unordered pairs,Pairs with a reversed disclosed direction.
+sensitivity.csv,P_vs_centerP_relation_changes,integer,unordered pairs,Pairs whose reported relation differs from center.
+sensitivity.csv,P_vs_centerP_relation_agreement_fraction,numeric,fraction,Fraction of all pairs retaining the center relation.
+sensitivity.csv,P_vs_main_center_tie_to_disclosure,integer,unordered pairs,Pairs withheld at center and disclosed by this report.
+sensitivity.csv,P_vs_main_center_disclosure_to_tie,integer,unordered pairs,Pairs disclosed at center and withheld by this report.
+sensitivity.csv,P_vs_main_center_direction_reversals,integer,unordered pairs,Pairs with a reversed disclosed direction.
+sensitivity.csv,P_vs_main_center_relation_changes,integer,unordered pairs,Pairs whose reported relation differs from center.
+sensitivity.csv,P_vs_main_center_relation_agreement_fraction,numeric,fraction,Fraction of all pairs retaining the center relation.
+sensitivity.csv,P_minus_main_center_P_reference_B,numeric,loss difference,Alternative report minus central report under common main-model B.
+sensitivity.csv,P_minus_main_center_P_reference_B_paired_mcse,numeric,paired MCSE,Monte Carlo standard error of the paired loss difference on the same main-model B.
+sensitivity.csv,main_center_P_reference_B_Rtau,numeric,expected reporting loss,Central report loss under the main-model B reference.
+sensitivity.csv,main_center_P_reference_B_Rtau_mcse,numeric,loss MCSE,Monte Carlo standard error of central-report loss under the main-model B reference.
+sensitivity.csv,B_delta_vs_center_same_objective,numeric,loss difference,Alternative report minus central report evaluated with the same objective.
+sensitivity.csv,B_delta_paired_mcse,numeric,paired MCSE,Monte Carlo standard error of the same-B paired loss difference from the center.
+sensitivity.csv,B_delta_MC_scope,character,,"Numerical interpretation of the contrast, including analytic zero for identical relations."
+sensitivity.csv,capacity1_K,integer,positions,Assumed whole-band review capacity.
+sensitivity.csv,capacity1_core_n,integer,entities,Number of entities in complete bands lying entirely within the assumed review capacity.
+sensitivity.csv,capacity1_boundary_n,integer,entities,Number of entities in the intact band that straddles the assumed review capacity.
+sensitivity.csv,capacity1_outside_n,integer,entities,Number outside the whole-band review scope.
+sensitivity.csv,capacity1_core_ids,character,,Semicolon-separated core entity IDs.
+sensitivity.csv,capacity1_boundary_ids,character,,Semicolon-separated boundary entity IDs.
+sensitivity.csv,capacity2_K,integer,positions,Assumed whole-band review capacity.
+sensitivity.csv,capacity2_core_n,integer,entities,Number of entities in complete bands lying entirely within the assumed review capacity.
+sensitivity.csv,capacity2_boundary_n,integer,entities,Number of entities in the intact band that straddles the assumed review capacity.
+sensitivity.csv,capacity2_outside_n,integer,entities,Number outside the whole-band review scope.
+sensitivity.csv,capacity2_core_ids,character,,Semicolon-separated core entity IDs.
+sensitivity.csv,capacity2_boundary_ids,character,,Semicolon-separated boundary entity IDs.
+sensitivity.csv,capacity_K1,integer,positions,Assumed capacity in the model/direction sensitivity comparison.
+sensitivity.csv,core1_n,integer,entities,Whole-band core count at the corresponding capacity.
+sensitivity.csv,boundary1_n,integer,entities,Whole-band boundary count at the corresponding capacity.
+sensitivity.csv,capacity_K2,integer,positions,Assumed capacity in the model/direction sensitivity comparison.
+sensitivity.csv,core2_n,integer,entities,Whole-band core count at the corresponding capacity.
+sensitivity.csv,boundary2_n,integer,entities,Whole-band boundary count at the corresponding capacity.
+sensitivity.csv,relation_changes_vs_center,integer,unordered pairs,Pairs whose reported relation differs from the central report.
+sensitivity.csv,A_solver_gap,numeric,normalized loss gap,Upper minus lower normalized reporting-risk bound for the finite-A objective; not a B-risk or population bound.
+sensitivity.csv,A_solver_upper_bound,numeric,normalized loss,Finite-A objective upper bound; not a B-risk or population bound.
+sensitivity.csv,A_solver_lower_bound,numeric,normalized loss,Finite-A objective lower bound; not a B-risk or population bound.
+sensitivity.csv,A_optimality_scope,character,,Partition/order restrictions to which the finite-A certificate applies.
+sensitivity.csv,A_bound_scope,character,,Interpretation of the finite-A optimization bounds.
+sensitivity.csv,scientifically_ready,logical,,Whether the case met the recorded adoption conditions.
+sensitivity.csv,selection_precision_status,character,,Whether pair-probability precision is met or remains limited.
+sensitivity.csv,comparison_scope,character,,"Interpretation and common objective, if any, for the comparison."
+sensitivity.csv,evaluation_role,character,,Own-policy versus main-model reference B evaluation.
+sensitivity.csv,A_objective_scope,character,,Model and policy law used for selection on A.
+sensitivity.csv,B_objective_scope,character,,Reference posterior law and fixed actions used for B evaluation.
+capacity-status.csv,universe,character,,County or tract decision universe; separate model/report comparisons.
+capacity-status.csv,case_id,character,,Policy or model case identifier; direction constraint is a separate exploratory case.
+capacity-status.csv,method,character,,"Reporting rule B0, B1, B2, B3, or P."
+capacity-status.csv,entity_id,character,FIPS or GEOID,County or tract identifier within the stated universe.
+capacity-status.csv,county_id,character,FIPS,Five-character county FIPS code; leading zero retained.
+capacity-status.csv,review_capacity_K,integer,positions,Assumed review capacity; a straddling band remains intact.
+capacity-status.csv,grade_original,integer,ordinal band,Band assigned within the named method/case.
+capacity-status.csv,capacity_status,character,,"Whole-band status: core, boundary, outside, or excluded."
+capacity-status.csv,band_size,integer,entities,Number of candidates sharing this band.
+capacity-status.csv,band_position_min,integer,position,First position occupied by the band in the review order.
+capacity-status.csv,band_position_max,integer,position,Last position occupied by the band in the review order.
+capacity-status.csv,boundary_unsplit,logical,,Boundary bands are retained as complete groups.
+county-review-results.csv,county_id,character,FIPS,Five-character county FIPS code; leading zero retained.
+county-review-results.csv,county_name,character,,County name.
+county-review-results.csv,county_government_candidate,logical,,Whether the county is one of the 64 candidates; not full project eligibility.
+county-review-results.csv,route_status,character,,County-government route classification; does not determine municipal or project eligibility.
+county-review-results.csv,income_raw_estimate_points,numeric,percentile points,Published noisy estimate.
+county-review-results.csv,income_raw_se_points,numeric,percentile points,Published standard error.
+county-review-results.csv,income_posterior_mean_points,numeric,percentile points,Posterior mean under the selected measurement model.
+county-review-results.csv,income_posterior_median_points,numeric,percentile points,Posterior median under the selected measurement model.
+county-review-results.csv,income_posterior_sd_points,numeric,percentile points,Posterior standard deviation.
+county-review-results.csv,income_posterior_q025_points,numeric,percentile points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+county-review-results.csv,income_posterior_q975_points,numeric,percentile points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+county-review-results.csv,income_posterior_interval_width_points,numeric,percentile points,Upper minus lower endpoint of the separate-criterion 95% interval.
+county-review-results.csv,income_shrinkage_signed_points,numeric,percentile points,Posterior mean minus published estimate; not change over time.
+county-review-results.csv,income_posterior_fit_id,character,,Selected source fit identifier.
+county-review-results.csv,incarceration_raw_estimate_points,numeric,percentage points,Published noisy estimate.
+county-review-results.csv,incarceration_raw_se_points,numeric,percentage points,Published standard error.
+county-review-results.csv,incarceration_posterior_mean_points,numeric,percentage points,Posterior mean under the selected measurement model.
+county-review-results.csv,incarceration_posterior_median_points,numeric,percentage points,Posterior median under the selected measurement model.
+county-review-results.csv,incarceration_posterior_sd_points,numeric,percentage points,Posterior standard deviation.
+county-review-results.csv,incarceration_posterior_q025_points,numeric,percentage points,Posterior 2.5th percentile; lower endpoint of the separate-criterion 95% interval.
+county-review-results.csv,incarceration_posterior_q975_points,numeric,percentage points,Posterior 97.5th percentile; upper endpoint of the separate-criterion 95% interval.
+county-review-results.csv,incarceration_posterior_interval_width_points,numeric,percentage points,Upper minus lower endpoint of the separate-criterion 95% interval.
+county-review-results.csv,incarceration_shrinkage_signed_points,numeric,percentage points,Posterior mean minus published estimate; not change over time.
+county-review-results.csv,incarceration_posterior_fit_id,character,,Selected source fit identifier.
+county-review-results.csv,grade_B0,integer,ordinal band,"Band in B0, the report that withholds all pair comparisons."
+county-review-results.csv,grade_B1,integer,ordinal band,"Band in B1, based on fixed quintiles of published-estimate rank scores; exact score ties can merge nominal quintile groups."
+county-review-results.csv,grade_B2,integer,ordinal band,"Band in B2, based on fixed quintiles of posterior-mean rank scores; exact score ties can merge nominal quintile groups."
+county-review-results.csv,grade_B3,integer,ordinal band,"Band in B3, obtained by optimal cuts of the exact posterior-expected-rank order."
+county-review-results.csv,grade_P,integer,ordinal band,Central common report band; missing outside the relevant candidate set.
+county-review-results.csv,matched_received_application_count,integer,applications,Received applications whose recorded county name matches this county.
+county-review-results.csv,matched_county_fund_application_count,integer,applications,Matched applications in the County Fund section.
+county-review-results.csv,matched_requested_cents,integer,US cents,Exact total requested cents for matched applications.
+county-review-results.csv,matched_requested_usd,numeric,USD,Requested amount for matched applications; not an award or project cost.
+county-review-results.csv,capacity_K3,character,,Whole-band county status at assumed capacity 3.
+county-review-results.csv,capacity_K5,character,,Whole-band status at assumed capacity 5.
+tract-stability-cases.csv,tract_id,character,GEOID,Eleven-character 2010 tract GEOID; leading zero retained.
+tract-stability-cases.csv,county_id,character,FIPS,Five-character county FIPS code; leading zero retained.
+tract-stability-cases.csv,case_id,character,,Policy or model case identifier; direction constraint is a separate exploratory case.
+tract-stability-cases.csv,case_kind,character,,"Central, policy, or measurement-model case."
+tract-stability-cases.csv,scientifically_ready,logical,,Whether the case met the recorded adoption conditions.
+tract-stability-cases.csv,grade_original,integer,ordinal band,Band assigned within the named method/case.
+tract-stability-cases.csv,relation_profile_agreement,numeric,fraction,Share of the tract’s pair relations unchanged from the center in this case.
+tract-stability-cases.csv,exact_relation_profile_preserved,logical,,Whether every relation for this tract agrees with its central relation profile.
+tract-stability-cases.csv,same_disclosed_direction,integer,entity pairs,Relations that keep the same disclosed direction.
+tract-stability-cases.csv,same_withheld,integer,entity pairs,Relations withheld under both this case and the center.
+tract-stability-cases.csv,direction_reversals,integer,entity pairs,Disclosed directions that reverse relative to the center.
+tract-stability-cases.csv,disclosure_to_tie,integer,entity pairs,Comparisons disclosed at the center and withheld in this case.
+tract-stability-cases.csv,tie_to_disclosure,integer,entity pairs,Comparisons withheld at the center and disclosed in this case.
+tract-stability-cases.csv,capacity_K5,character,,Whole-band status at assumed capacity 5.
+tract-stability-cases.csv,capacity_K10,character,,Whole-band tract status at assumed capacity 10.
+hmc-production-attempts.csv,fit_id,character,,Identifier of the original production attempt.
+hmc-production-attempts.csv,model_id,character,,Measurement model identifier.
+hmc-production-attempts.csv,pool,character,,"Computation stream A, replacement A-extension, or evaluation B; the extension replaces the earlier A run."
+hmc-production-attempts.csv,criterion,character,,Income or incarceration; fitted separately.
+hmc-production-attempts.csv,attempt,character,,Production attempt identifier.
+hmc-production-attempts.csv,selected,logical,,Whether this production attempt supplies the published analysis.
+hmc-production-attempts.csv,N,integer,entities,"Number of modeled source entities, not the disclosed-pair count used in report metrics."
+hmc-production-attempts.csv,iter_sampling,integer,iterations per chain,"Retained sampling iterations per chain, excluding warm-up."
+hmc-production-attempts.csv,seed,integer,,Recorded sampling seed.
+hmc-production-attempts.csv,hard_hmc_passed,logical,,Whether all required HMC diagnostics passed.
+hmc-production-attempts.csv,rhat_max,numeric,,Maximum monitored rank-normalized R-hat.
+hmc-production-attempts.csv,ess_bulk_min,numeric,effective draws,Minimum monitored bulk effective sample size.
+hmc-production-attempts.csv,ess_tail_min,numeric,effective draws,Minimum monitored tail effective sample size.
+hmc-production-attempts.csv,divergences,integer,transitions,Number of divergent sampling transitions.
+hmc-production-attempts.csv,treedepth_hits,integer,iterations,Number of iterations reaching the configured maximum tree depth.
+hmc-production-attempts.csv,bfmi_min,numeric,,Minimum chain energy Bayesian fraction of missing information.
+hmc-production-attempts.csv,major_ess1000_passed,logical,,"Whether all major monitored parameters and targets met the preferred ESS 1,000 threshold."
+hmc-production-attempts.csv,universe,character,,County or tract decision universe; separate model/report comparisons.
+hmc-production-attempts.csv,public_fit_id,character,,Selected fit identifier in the compendium; missing for unselected attempts.
+hmc-production-attempts.csv,latent_branch,character,,"Single-level NCP, integrated county/eta, or explicit county/tract NCP representation."
+hmc-production-attempts.csv,chains,integer,chains,Number of sampling chains.
+hmc-production-attempts.csv,warmup,integer,iterations per chain,Warm-up iterations per chain.
+hmc-production-attempts.csv,thin,integer,,Saved-iteration interval; one means no thinning.
+hmc-production-attempts.csv,chain_ids,character,,Semicolon-separated original chain identifiers.
+hmc-production-attempts.csv,first_stan_iteration,integer,iteration,Original first retained Stan iteration.
+hmc-production-attempts.csv,last_stan_iteration,integer,iteration,Original last retained Stan iteration.
+hmc-parameter-diagnostics.csv,fit_id,character,,Identifier of the original production attempt.
+hmc-parameter-diagnostics.csv,public_fit_id,character,,Selected fit identifier in the compendium; missing for unselected attempts.
+hmc-parameter-diagnostics.csv,selected,logical,,Whether this production attempt supplies the published analysis.
+hmc-parameter-diagnostics.csv,variable,character,,Monitored Stan parameter or target name; y_rep is excluded from HMC monitoring.
+hmc-parameter-diagnostics.csv,mean,numeric,parameter scale,Posterior mean on the named parameter’s scale.
+hmc-parameter-diagnostics.csv,median,numeric,parameter scale,Posterior median on the named parameter’s scale.
+hmc-parameter-diagnostics.csv,sd,numeric,parameter scale,Posterior standard deviation.
+hmc-parameter-diagnostics.csv,mad,numeric,parameter scale,Posterior median absolute deviation reported by the summary routine.
+hmc-parameter-diagnostics.csv,q5,numeric,parameter scale,Posterior 5th percentile; lower endpoint of a 90% interval.
+hmc-parameter-diagnostics.csv,q95,numeric,parameter scale,Posterior 95th percentile; upper endpoint of a 90% interval.
+hmc-parameter-diagnostics.csv,rhat,numeric,,Rank-normalized convergence diagnostic for this monitored variable.
+hmc-parameter-diagnostics.csv,ess_bulk,numeric,effective draws,Bulk effective sample size of this monitored variable.
+hmc-parameter-diagnostics.csv,ess_tail,numeric,effective draws,Tail effective sample size of this monitored variable.
+hmc-chain-diagnostics.csv,fit_id,character,,Identifier of the original production attempt.
+hmc-chain-diagnostics.csv,public_fit_id,character,,Selected fit identifier in the compendium; missing for unselected attempts.
+hmc-chain-diagnostics.csv,selected,logical,,Whether this production attempt supplies the published analysis.
+hmc-chain-diagnostics.csv,num_divergent,integer,transitions,Divergent transitions in this chain.
+hmc-chain-diagnostics.csv,num_max_treedepth,integer,iterations,Maximum-tree-depth hits in this chain.
+hmc-chain-diagnostics.csv,ebfmi,numeric,,Energy Bayesian fraction of missing information for this chain.
+hyperparameters.csv,criterion,character,,Income or incarceration; fitted separately.
+hyperparameters.csv,variable,character,,Monitored Stan parameter or target name; y_rep is excluded from HMC monitoring.
+hyperparameters.csv,mean,numeric,logit-scale parameter,Posterior mean on the named parameter’s scale. Level and spread parameters are on the logit scale.
+hyperparameters.csv,q5,numeric,logit-scale parameter,Posterior 5th percentile; lower endpoint of a 90% interval. Level and spread parameters are on the logit scale.
+hyperparameters.csv,q95,numeric,logit-scale parameter,Posterior 95th percentile; upper endpoint of a 90% interval. Level and spread parameters are on the logit scale.
+hyperparameters.csv,fit_id,character,,Public identifier of the selected central tract fit for this criterion.
+readiness-summary.csv,element,character,,Project-development element summarized in printed Table 2.
+readiness-summary.csv,evidence_from_review_bands,character,,Evidence contributed by the review bands.
+readiness-summary.csv,further_evidence_and_action,character,,Further evidence and project-development action needed.
+rating-summary.csv,component,character,,Rating-instrument component.
+rating-summary.csv,points,integer,rating points,Points or cap in the official blank instrument; respect subtotal and cap flags.
+rating-summary.csv,evidence_assessed,character,,Evidence assessed by the instrument component.
+rating-summary.csv,parent_component,character,,"Parent subtotal, if the component is nested."
+rating-summary.csv,is_subtotal,logical,,Whether points summarize other rows rather than add independent points.
+rating-summary.csv,is_overall_cap,logical,,Whether this row states the overall rating cap.
+applications-by-fund.csv,fund_section,character,,"Fund section of the received-applications roster, or total."
+applications-by-fund.csv,applications,integer,applications,Number of received applications in this section.
+applications-by-fund.csv,amount_requested_cents_exact,integer,US cents,Exact requested cents; sum before converting to dollars.
+applications-by-fund.csv,amount_requested_usd_exact,numeric,USD,Requested dollars from exact cents; not awards.
+applications-by-fund.csv,county_governments,integer,applications,Applications classified as county governments.
+applications-by-fund.csv,municipal_governments,integer,applications,Applications classified as municipal governments.
+applications-by-fund.csv,unknown_or_mixed,integer,applications,Applications whose government type is unknown or mixed.
+hyperparameter-draws.rds,schema_version,integer,,Version of the compact hyperparameter object schema.
+hyperparameter-draws.rds,author,character,,JoonHo Lee (jlee296@ua.edu).
+hyperparameter-draws.rds,description,character,,Purpose of the compact object: central tract selection-stream hyperparameters for Table B.1.
+hyperparameter-draws.rds,variables,character vector,latent-logit parameter names,"Ordered parameter axis: alpha, sigma_county, sigma_tract."
+hyperparameter-draws.rds,model_id,character,,"PV-TM1, the central county-plus-tract measurement model."
+hyperparameter-draws.rds,pool,character,,"A, the adopted selection computation stream."
+hyperparameter-draws.rds,criteria,named list,,Separate income and incarceration blocks; no scientific cross-criterion joint draws are asserted.
+hyperparameter-draws.rds,criteria[[criterion]]$fit_id,character,,Public central fit identifier: PV-TM1-A-income or PV-TM1-A-incarceration.
+hyperparameter-draws.rds,criteria[[criterion]]$source_fit_id,character,,Original adopted production-fit identifier; attempt 002.
+hyperparameter-draws.rds,criteria[[criterion]]$draws,numeric array,latent logit,"Actual postwarmup array: 4,000 iterations by four chains by three parameters. Dimension labels are iterations 1001:5000, chains 1:4, and the ordered variables. Means and type-7 5th/95th quantiles reproduce Table B.1; spread parameters are standard deviations of latent logits."
+hyperparameter-draws.rds,criteria[[criterion]]$source_csv_sha256,named list,SHA-256,Original CmdStan CSV basenames mapped to their checksums; four chain files per criterion.
+hyperparameter-draws.rds,criteria[[criterion]]$model_id,character,,PV-TM1; repeated within each criterion block.
+hyperparameter-draws.rds,criteria[[criterion]]$pool,character,,A; repeated within each criterion block.
+hyperparameter-draws.rds,criteria[[criterion]]$criterion,character,,Name of the separate income or incarceration measurement fit.
+hyperparameter-draws.rds,criteria[[criterion]]$source_scale,character,,Latent logit; the parameters describe logit levels and spreads rather than natural outcome points.
+hyperparameter-draws.rds,criteria[[criterion]]$warmup_removed,logical,,TRUE; warmup draws are excluded.
+pair-precision-summary.csv,pool,character,,Main-tract numerical stream A or B; both use the same observed data.
+pair-precision-summary.csv,model_id,character,,Measurement model identifier.
+pair-precision-summary.csv,n_entities,integer,tracts,Number of pilot tracts in the diagnostic universe.
+pair-precision-summary.csv,n_frozen_pairs,integer,unordered pairs,Size of the fixed historical A-only pair-screen union.
+pair-precision-summary.csv,n_policies,integer,policy settings,Number of one-at-a-time policy settings evaluated.
+pair-precision-summary.csv,weighted_rows,integer,policy-direction rows,Number of frozen pairs times two directions times n_policies; five policy settings in this summary.
+pair-precision-summary.csv,finite_weighted_rows,integer,policy-direction rows,Rows whose contributing criterion indicator MCSEs are all available.
+pair-precision-summary.csv,unavailable_weighted_rows,integer,policy-direction rows,Weighted policy-direction rows with unavailable MCSE because a required criterion indicator MCSE is unidentified; not a zero error estimate.
+pair-precision-summary.csv,finite_weighted_target_misses,integer,policy-direction rows,Finite weighted MCSE values above the .005 coefficient target.
+pair-precision-summary.csv,any_criterion_constant_rows,integer,policy-direction rows,Rows with at least one observed constant criterion indicator.
+pair-precision-summary.csv,all_criteria_constant_rows,integer,policy-direction rows,Rows with observed constant indicators for every criterion.
+pair-precision-summary.csv,max_finite_weighted_mcse,numeric,probability,"Maximum identified weighted-coefficient MCSE, combining independent numerical-stream variances with squared criterion weights."
+pair-precision-summary.csv,criterion_diagnostic_target_misses,integer,criterion-direction rows,Criterion-specific MCSE values above .005; separate from the weighted coefficient target.
+pair-precision-summary.csv,target_mcse,numeric,probability,Weighted coefficient MCSE target; independent of fixed-report loss targets.
+pair-precision-summary.csv,income_draws,integer,vector draws,Number of native income vector draws.
+pair-precision-summary.csv,incarceration_draws,integer,vector draws,Number of native incarceration vector draws; matching row positions do not imply scientific pairing with income draws.
+pair-precision-summary.csv,criterion_direction_rows_with_ties,integer,criterion-direction rows,Criterion-direction indicators containing exact equality between the two target values.
+pair-precision-summary.csv,precision_status,character,,precision_limited if any required indicator MCSE is unavailable or any finite weighted MCSE exceeds its target; otherwise precision_sufficient.

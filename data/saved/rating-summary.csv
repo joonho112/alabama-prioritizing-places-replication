@@ -1,0 +1,9 @@
+component,points,evidence_assessed,parent_component,is_subtotal,is_overall_cap
+Needs assessment,5,Community-wide need and low- and moderate-income conditions.,Nature of benefits,FALSE,FALSE
+Project development,45,"Need, alternatives, activities, and costs; includes 10 points for project maps.",Nature of benefits,FALSE,FALSE
+Impact,50,"Actual beneficiaries, directness, and urgency.",Nature of benefits,FALSE,FALSE
+Other considerations,30,"Operations, maintenance, participation, implementation capacity, and distress.",Nature of benefits,FALSE,FALSE
+Nature of benefits,130,Subtotal of the four components above.,,TRUE,FALSE
+Cost-benefit ratio,50,Requested dollars per actual beneficiary.,,FALSE,FALSE
+Matching contribution,20,"Local match; full score for applicants with populations of 1,000 or fewer, or projects with 100% LMI beneficiaries.",,FALSE,FALSE
+Overall cap,200,"Total score, subject to the form's provisions.",,FALSE,TRUE

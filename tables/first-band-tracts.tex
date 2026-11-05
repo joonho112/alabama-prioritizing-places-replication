@@ -1,0 +1,53 @@
+% JoonHo Lee (jlee296@ua.edu)
+% Requires booktabs, tabularx, and array.
+\begin{table}[htbp]
+\caption{The first band of the common tract report}
+\label{tab:firstband}
+\centering\small
+\renewcommand{\arraystretch}{1.2}
+\textit{Montgomery County}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Tract & Income rank & Incarceration \\
+\midrule
+1 & 29.29 [26.64, 31.96] & 4.79 [1.81, 8.79] \\
+\addlinespace[0.35em]
+2 & 27.39 [24.88, 29.96] & 2.84 [1.18, 5.15] \\
+\addlinespace[0.35em]
+3 & 28.29 [26.21, 30.37] & 4.58 [2.00, 7.64] \\
+\addlinespace[0.35em]
+6 & 27.40 [25.16, 29.65] & 3.73 [1.52, 6.57] \\
+\addlinespace[0.35em]
+7 & 29.26 [26.99, 31.52] & 3.87 [1.54, 6.91] \\
+\addlinespace[0.35em]
+10 & 27.49 [25.88, 29.08] & 5.90 [3.63, 8.29] \\
+\addlinespace[0.35em]
+12 & 26.86 [25.07, 28.66] & 3.20 [1.50, 5.22] \\
+\addlinespace[0.35em]
+21 & 29.82 [27.95, 31.69] & 3.64 [1.77, 5.79] \\
+\addlinespace[0.35em]
+22.01 & 29.09 [27.87, 30.31] & 3.56 [2.24, 4.91] \\
+\addlinespace[0.35em]
+23 & 27.21 [25.68, 28.78] & 3.38 [1.78, 5.15] \\
+\addlinespace[0.35em]
+24 & 29.10 [27.24, 30.97] & 4.59 [2.24, 7.19] \\
+\addlinespace[0.35em]
+51.02 & 30.25 [28.71, 31.80] & 4.32 [2.25, 6.53] \\
+\addlinespace[0.35em]
+\bottomrule
+\end{tabularx}
+\par\medskip
+\textit{Russell County}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Tract & Income rank & Incarceration \\
+\midrule
+308 & 29.92 [27.84, 32.01] & 5.51 [2.63, 8.70] \\
+\addlinespace[0.35em]
+\bottomrule
+\end{tabularx}
+\par\medskip
+\begin{minipage}{\linewidth}\small
+\textit{Note.} Posterior means with separate-criterion 95\% intervals. Income rank is in percentile points and incarceration in percentage points. The historical cohort, pooled race/gender, and parental-income condition follow the paper. Full identifiers, published estimates, and standard errors remain in the detailed CSV data. Boundary bands are not split at review capacities.
+\end{minipage}
+\end{table}

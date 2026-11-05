@@ -1,0 +1,7 @@
+"criterion","variable","mean","q5","q95","fit_id"
+"income","alpha",-0.515124578969512,-0.535442756299866,-0.494418649373856,"PV-TM1-A-income"
+"income","sigma_county",0.0800092381620003,0.0629139196848037,0.0995758298604066,"PV-TM1-A-income"
+"income","sigma_tract",0.181292541112822,0.173415808897808,0.189515671011766,"PV-TM1-A-income"
+"incarceration","alpha",-4.13280669649756,-4.24275683410176,-4.03300706673444,"PV-TM1-A-incarceration"
+"incarceration","sigma_county",0.340685734877105,0.250772247157872,0.443127305019979,"PV-TM1-A-incarceration"
+"incarceration","sigma_tract",0.494773465119895,0.447808561940212,0.544002715705168,"PV-TM1-A-incarceration"

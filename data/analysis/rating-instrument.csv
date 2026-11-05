@@ -1,0 +1,8 @@
+source_id,rating_element,possible_points,source_paragraph_locator,interpretation_limit,observed_project_score,total_cap_points,cap_source_locator
+rating-form-2026,Needs Assessment,5,P0024-P0029,community-wide needs incl LMI; not a separate Atlas formula,NOT_PUBLICLY_OBSERVED,200,P0149
+rating-form-2026,Project Development,45,P0037-P0054,Includes map accuracy/completeness10points at P0053-P0054; needs/activity/cost/alternatives fields required,NOT_PUBLICLY_OBSERVED,200,P0149
+rating-form-2026,Impact,50,P0063-P0088,Project impacts/beneficiaries/directness/LMI/urgency/secondarybenefits/lifeexpectancy,NOT_PUBLICLY_OBSERVED,200,P0149
+rating-form-2026,Other Considerations,30,P0096-P0116,Water/sewer rates -5to0; capacities/participation/distressetc; not Atlas weights,NOT_PUBLICLY_OBSERVED,200,P0149
+rating-form-2026,Nature of Benefits,130,P0130-P0131,Subtotal of four groups:5+45+50+30,NOT_PUBLICLY_OBSERVED,200,P0149
+rating-form-2026,Cost/Benefit Ratio,50,P0136-P0139,Uses requestedCDBG$perbeneficiary not fullprojectcost or causalROI; specified bonus separate,NOT_PUBLICLY_OBSERVED,200,P0149
+rating-form-2026,Match Ratio,20,P0141-P0142,Match formula and conditional exceptions per actualprogram; not studyweights,NOT_PUBLICLY_OBSERVED,200,P0149

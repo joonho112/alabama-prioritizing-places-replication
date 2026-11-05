@@ -1,0 +1,29 @@
+kind,paper_number,paper_label,title,source_filename,public_output,script_key,role
+figure,1,fig:workflow,Needs review and the CDBG application process,fig1_workflow.pdf,figures/fig1_workflow.pdf,fig1,printed
+figure,2,fig:outcomes,Historical opportunity indicators,fig2_historical_outcomes.pdf,figures/fig2_historical_outcomes.pdf,fig2,printed
+figure,3,fig:crosshair,Two criteria and uncertainty,fig3_two_criteria_uncertain.pdf,figures/fig3_two_criteria_uncertain.pdf,fig3,printed
+figure,4,fig:bands,Geographic review bands,fig4_review_bands_maps.pdf,figures/fig4_review_bands_maps.pdf,fig4,printed
+figure,5,fig:capacity,Capacity and intact boundary bands,fig5_capacity_readout.pdf,figures/fig5_capacity_readout.pdf,fig5,printed
+figure,6,fig:disclosure,Disclosure and expected reporting loss,fig6_disclosure_loss.pdf,figures/fig6_disclosure_loss.pdf,fig6,printed
+figure,7,fig:stability,Review-scope stability,fig7_review_scope_stability.pdf,figures/fig7_review_scope_stability.pdf,fig7,printed
+figure,8,fig:applications,Applications and current county conditions,fig8_applications_snapshot.pdf,figures/fig8_applications_snapshot.pdf,fig8,printed
+figure,A.1,fig:S-context,Current conditions at native geographies,figS5_current_context.pdf,figures/figS5_current_context.pdf,figS5,printed
+figure,B.1,fig:S-precision,Precision of tract estimates,figS1_precision_maps.pdf,figures/figS1_precision_maps.pdf,figS1,printed
+figure,B.2,fig:S-adjustment,Posterior adjustment,figS2_posterior_adjustment.pdf,figures/figS2_posterior_adjustment.pdf,figS2,printed
+figure,D.1,fig:S-relations-county,County pair relations,figS3a_relations_county.pdf,figures/figS3a_relations_county.pdf,figS3,printed
+figure,D.2,fig:S-relations-tract,Tract pair relations,figS3b_relations_tract.pdf,figures/figS3b_relations_tract.pdf,figS3,printed
+figure,E.1 (part 1),fig:S-membership,"Tract bands and capacity status, part 1",figS4_membership_part1.pdf,figures/figS4_membership_part1.pdf,figS4,printed
+figure,E.1 (part 2),continued E.1,"Tract bands and capacity status, part 2",figS4_membership_part2.pdf,figures/figS4_membership_part2.pdf,figS4,printed
+figure,E.1 (part 3),continued E.1,"Tract bands and capacity status, part 3",figS4_membership_part3.pdf,figures/figS4_membership_part3.pdf,figS4,printed
+figure,D.1 detail,fig:S-relations-county,County pair relations with individual labels,figS3a_relations_county_detailed.pdf,figures/figS3a_relations_county_detailed.pdf,figS3,standalone_detail
+figure,D.2 detail,fig:S-relations-tract,Tract pair relations with individual labels,figS3b_relations_tract_detailed.pdf,figures/figS3b_relations_tract_detailed.pdf,figS3,standalone_detail
+figure,E.1 detail,fig:S-membership,"Tract bands and capacity status, all 90 tracts",figS4_membership_all90.pdf,figures/figS4_membership_all90.pdf,figS4,standalone_detail
+table,1,tab:firstband,First-band tract profiles,tab-firstband.tex,tables/first-band-tracts.csv,table-firstband,printed
+table,2,tab:readiness,Review evidence and project development,sec8_project.tex,tables/project-readiness-summary.csv,table-readiness,printed
+table,3,tab:bandsapps,County bands and applications,tab-bands-apps.tex,tables/county-bands-applications.csv,table-bands-applications,printed
+table,B.1,tab:B-hyper,Tract-model population parameters,appendix_B.tex,tables/hyperparameters.csv,table-hyperparameters,printed
+table,D.1,tab:D-comparators,Reporting-rule comparisons,supp-comparators.tex,tables/reporting-rule-comparisons.csv,table-comparators,printed
+table,E.1,tab:E-policy,Policy-setting sensitivity,supp-policy-sensitivity.tex,tables/policy-sensitivity.csv,table-policy-sensitivity,printed
+table,E.2,tab:E-model,Model and direction sensitivity,supp-model-sensitivity.tex,tables/model-direction-sensitivity.csv,table-model-sensitivity,printed
+table,F.1,tab:F-rating,CDBG rating instrument,appendix_F.tex,tables/rating-instrument.csv,table-rating,printed
+diagnostic,C,Appendix C,Fixed-domain coefficient precision,,data/saved/pair-precision-summary.csv,pair-precision,reference_summary

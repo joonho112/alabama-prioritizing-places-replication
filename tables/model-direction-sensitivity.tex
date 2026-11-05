@@ -1,0 +1,43 @@
+% JoonHo Lee (jlee296@ua.edu)
+% Requires booktabs, tabularx, and array.
+\begin{table}[htbp]
+\caption{Model alternatives and the exploratory direction constraint}
+\label{tab:E-model}
+\centering\small
+\renewcommand{\arraystretch}{1.2}
+\textit{A. Selected reports}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Alternative & Disclosed pairs & Share (\%) & Bands & Relations changed \\
+\midrule
+TS1 & 1,984 & 49.5 & 4 & 695 \\
+\addlinespace[0.35em]
+TS2 & 1,077 & 26.9 & 3 & 490 \\
+\addlinespace[0.35em]
+TS3 & 1,668 & 41.6 & 4 & 461 \\
+\addlinespace[0.35em]
+Direction c=.5 & 1,553 & 38.8 & 3 & 0 \\
+\addlinespace[0.35em]
+\bottomrule
+\end{tabularx}
+\par\medskip
+\textit{B. Common-reference loss and review scope}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Alternative & Excess loss & Paired MCSE & Core / boundary K=5 & Core / boundary K=10 \\
+\midrule
+TS1 & +0.0040 & 6.9e-05 & 1 / 11 & 1 / 11 \\
+\addlinespace[0.35em]
+TS2 & +0.0033 & 5e-05 & 0 / 13 & 0 / 13 \\
+\addlinespace[0.35em]
+TS3 & +0.0026 & 5.3e-05 & 1 / 15 & 1 / 15 \\
+\addlinespace[0.35em]
+Direction c=.5 & 0.0000 & 0 & 0 / 13 & 0 / 13 \\
+\addlinespace[0.35em]
+\bottomrule
+\end{tabularx}
+\par\medskip
+\begin{minipage}{\linewidth}\small
+\textit{Note.} TS1 omits county effects; TS2 multiplies published SEs by 1.25; TS3 uses within-county measurement-error correlation .25. Each report is selected from its own A and compared with the center on the same main-model B. The direction screen disallows finite-A weighted wrong-direction probabilities above .5. It is nonbinding in the archived results and is excluded from the eight-case stability frequencies.
+\end{minipage}
+\end{table}

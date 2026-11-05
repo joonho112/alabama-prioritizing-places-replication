@@ -1,0 +1,213 @@
+table,column,type,unit,description,missing_policy
+data/analysis/acs-county-child-poverty.csv,GEO_ID,text,Census GEO_ID,Native Census summary-file geography identifier.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,B17006_E001,number,persons,Estimated number of related children under 18 in families; the poverty-share denominator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,B17006_M001,number,persons,Published 90% margin of error for the denominator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,B17006_E002,number,persons,Estimated number of related children under 18 in families below poverty; the poverty-share numerator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,B17006_M002,number,persons,Published 90% margin of error for the numerator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,county_id,text,5-character FIPS,Five-character Alabama county FIPS code; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/acs-county-child-poverty.csv,den,number,persons,B17006_E001 numeric denominator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,den_moe,number,persons,B17006_M001 numeric denominator MOE.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,num_,number,persons,B17006_E002 numeric numerator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,num_moe,number,persons,B17006_M002 numeric numerator MOE.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,share,number,percent,"100 times numerator divided by denominator, using the same related-child population universe.",Required for the 67 county records; derived only from positive denominators.
+data/analysis/acs-county-child-poverty.csv,share_moe,number,percentage points,"Derived 90% margin of error for the child-poverty percentage, using the subset-proportion formula and its addition fallback when needed.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,moe_confidence_level,number,percent,Confidence level of the published Census margins of error; 90 percent.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/acs-county-child-poverty.csv,moe_addition_fallback,boolean,,TRUE when the subset-proportion subtraction radicand is negative and the documented addition formula is used.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,application_id,text,,Stable identifier formed from the public workbook sheet and source row.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,source_id,text,,Source identifier linked to DATA-SOURCES.md and the source catalog.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,source_sha256,text,SHA-256,"Hash of the exact source-file bytes, not of this derived table.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,source_sheet,text,,Original worksheet name.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,source_row,integer,Excel row,"Original workbook row, including title/header rows in the numbering.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,fund_section,text,,Official fund section containing the application.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,date_received_iso,date,YYYY-MM-DD,"Date received, decoded using the workbook's 1900 date system.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,applicant_name_raw,text,,"Original applicant label, including original spacing.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,county_name_raw,text,,Original reported county label; unresolved spelling retained.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,amount_requested_cents_exact,integer text,USD cents,Requested CDBG amount in exact whole cents for aggregation.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,amount_requested_usd_exact,decimal text,USD,Requested amount formatted with two decimal places.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,amount_requested_usd,number,USD,Numeric requested amount; exact aggregation uses the cents field.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,currency,text,,USD.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,activity_raw,text,,Original short activity label; not a verified project design.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,project_number_raw,text,,Original project/application number.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,county_id,text,5-character FIPS,Five-character county FIPS code from exact normalized name matching; missing for the unresolved application.,Missing for the one unresolved county name; retain the raw name and do not assign a county by guesswork.
+data/analysis/applications.csv,county_name_resolved,text,,"County name after exact normalized matching, or missing.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,county_resolution_status,text,,Exact normalized match or unresolved; no fuzzy reassignment.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/applications.csv,government_type,text,,"Municipal, county, or unknown/mixed classification based on fund/name evidence.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,entity_id,text,FIPS,County FIPS code used as the entity key; identical to county_id.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/county-observations.csv,county_id,text,5-character FIPS,Five-character Alabama county FIPS code; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/county-observations.csv,state_native,text,native code,"State code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,county_native,text,native code,"County code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,source_row_ordinal,integer,row,"One-based national Atlas data row, excluding the header.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,income_estimate_fraction,number,native fraction,Original noisy published adult household income rank estimate.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,income_se_fraction,number,native fraction,"Published total standard error, including sampling and privacy noise.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,incarceration_estimate_fraction,number,native fraction,Original noisy published incarceration estimate; negative noisy values are retained.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,incarceration_se_fraction,number,native fraction,"Published total standard error, including sampling and privacy noise.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-observations.csv,county_name,text,,Official Census county name.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-universe.csv,entity_id,text,FIPS,County FIPS code used as the entity key; identical to county_id.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/county-universe.csv,county_id,text,5-character FIPS,Five-character Alabama county FIPS code; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/county-universe.csv,county_name,text,,Official Census county name.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-universe.csv,county_government_candidate,boolean,,TRUE for the 64 review candidates; not a project eligibility certification.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-universe.csv,route_status,text,,Potential county route or named exclusion used to define this decision universe.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/county-universe.csv,full_project_eligibility_status,text,,Project and service-area eligibility has not been verified.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,source_system,text,,Publisher/system supplying the statistical cell.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,source_id,text,,Source identifier linked to DATA-SOURCES.md and the source catalog.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,data_period,text,years,Period represented by the estimate.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,estimate_year,integer,year,End year of the tabulation period.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,geography_type,text,,"Native county, tract, or block-group geography.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,geography_vintage,text,,Boundary reference and vintage retained for the source cell.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,geoid,text,FIPS,Key of the native geography identified by geography_type.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,county_id,text,5-character FIPS,First five characters of the native geography's GEOID; leading zero retained.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,tract_id,text,11-character FIPS,Eleven-character tract GEOID at geography_vintage; missing for county context cells.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,block_group_id,text,12-character FIPS,Twelve-character 2020 Census block-group GEOID; missing for ACS county and tract cells.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,metric_id,text,,Identifier of the published ACS or HUD statistical quantity.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,estimate,number,see unit,Published factual estimate with official missing/special values represented as missing.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,moe,number,see moe_unit,Published margin of error; missing is not zero.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,moe_confidence_level,number,percent,Published confidence level; missing when not established by the HUD service.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,unit,text,,Unit of the estimate or program-context amount.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,moe_unit,text,,Unit of the margin of error.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,universe,text,,Population or tabulation denominator to which the quantity refers.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,estimate_variable,text,,Official published estimate variable.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,moe_variable,text,,Official published MOE variable; missing for metrics without one.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,availability_status,text,,Source availability or denominator-status annotation.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,source_sha256,text,SHA-256,"Hash of the exact source-file bytes, not of this derived table.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,HUD_LOWMODUNIV_zero,boolean,,TRUE for a HUD record with zero LOWMODUNIV; missing for ACS records.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,display_estimate,number,see unit,Display value; undefined HUD percentages with zero denominator remain missing.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context-display.csv,display_value_status,text,,"Available value, unavailable source estimate, or undefined zero-denominator percentage.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,source_system,text,,Publisher/system supplying the statistical cell.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,source_id,text,,Source identifier linked to DATA-SOURCES.md and the source catalog.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,data_period,text,years,Period represented by the estimate.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,estimate_year,integer,year,End year of the tabulation period.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,geography_type,text,,"Native county, tract, or block-group geography.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,geography_vintage,text,,Boundary reference and vintage retained for the source cell.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,geoid,text,FIPS,Key of the native geography identified by geography_type.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,county_id,text,5-character FIPS,First five characters of the native geography's GEOID; leading zero retained.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,tract_id,text,11-character FIPS,Eleven-character tract GEOID at geography_vintage; missing for county context cells.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,block_group_id,text,12-character FIPS,Twelve-character 2020 Census block-group GEOID; missing for ACS county and tract cells.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,metric_id,text,,Identifier of the published ACS or HUD statistical quantity.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,estimate,number,see unit,Published factual estimate with official missing/special values represented as missing.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,moe,number,see moe_unit,Published margin of error; missing is not zero.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,moe_confidence_level,number,percent,Published confidence level; missing when not established by the HUD service.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,unit,text,,Unit of the estimate or program-context amount.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,moe_unit,text,,Unit of the margin of error.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,universe,text,,Population or tabulation denominator to which the quantity refers.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,estimate_variable,text,,Official published estimate variable.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,moe_variable,text,,Official published MOE variable; missing for metrics without one.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,availability_status,text,,Source availability or denominator-status annotation.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/current-context.csv,source_sha256,text,SHA-256,"Hash of the exact source-file bytes, not of this derived table.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/pilot-tract-keys.csv,entity_id,text,FIPS,Historical tract GEOID used as the entity key; identical to tract_id.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/pilot-tract-keys.csv,tract_id,text,11-character FIPS,Eleven-character 2010 Census tract GEOID; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/pilot-tract-keys.csv,county_id,text,5-character FIPS,Five-character Alabama county FIPS code; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/pilot-tract-keys.csv,analysis_role,text,,"Label identifying the fixed, purposively selected historical-need pilot.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/policy-readiness.csv,item,text,,Readiness issue considered in the paper.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/policy-readiness.csv,evidence_now,text,,What the study and available public sources establish.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/policy-readiness.csv,missing_project_evidence,text,,Evidence still needed for actual project review.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/policy-readiness.csv,next_action,text,,Suggested evidence-gathering or review action.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/policy-readiness.csv,source_locator,text,,Public document paragraph or paper/output locator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,metric_id,text,,Identifier of the program budget or request-ceiling amount.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,value,number,see unit,Documented program-context amount.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,unit,text,,Unit of the estimate or program-context amount.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,fund,text,,CDBG fund to which the contextual amount applies.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,program_year,integer,year,Program year of the source material.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,source_id,text,,Source identifier linked to DATA-SOURCES.md and the source catalog.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,source_url,text,URL,Official source location.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,source_locator,text,,Public document paragraph or paper/output locator.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/program-context.csv,interpretation,text,,Scope and limits of the contextual quantity.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,source_id,text,,Source identifier linked to DATA-SOURCES.md and the source catalog.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,rating_element,text,,Official rating category or subtotal.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,possible_points,number,points,Possible points; subtotal rows must not be added twice.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,source_paragraph_locator,text,,Paragraph locator in the public rating form.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,interpretation_limit,text,,Meaning and nesting of this rating category.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,observed_project_score,text,,Project-specific scores are not publicly observed.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,total_cap_points,number,points,"Overall instrument cap, repeated for clarity.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/rating-instrument.csv,cap_source_locator,text,,Source locator for the overall cap.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,entity_id,text,FIPS,Historical tract GEOID used as the entity key; identical to tract_id.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/tract-observations.csv,county_id,text,5-character FIPS,Five-character Alabama county FIPS code; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/tract-observations.csv,state_native,text,native code,"State code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,county_native,text,native code,"County code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,source_row_ordinal,integer,row,"One-based national Atlas data row, excluding the header.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,income_estimate_fraction,number,native fraction,Original noisy published adult household income rank estimate.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,income_se_fraction,number,native fraction,"Published total standard error, including sampling and privacy noise.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,incarceration_estimate_fraction,number,native fraction,Original noisy published incarceration estimate; negative noisy values are retained.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,incarceration_se_fraction,number,native fraction,"Published total standard error, including sampling and privacy noise.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/analysis/tract-observations.csv,tract_id,text,11-character FIPS,Eleven-character 2010 Census tract GEOID; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/analysis/tract-observations.csv,tract_native,text,native code,"Tract code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,entity_id,text,FIPS,Historical tract GEOID used as the entity key; identical to tract_id.,Required; preserve the complete text identifier and any leading zero.
+data/metadata/tract-coverage.csv,tract_id,text,11-character FIPS,Eleven-character 2010 Census tract GEOID; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/metadata/tract-coverage.csv,county_id,text,5-character FIPS,Five-character Alabama county FIPS code; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/metadata/tract-coverage.csv,state_native,text,native code,"State code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,county_native,text,native code,"County code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,tract_native,text,native code,"Tract code as written in the original source, before zero-padding.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,source_row_ordinal,integer,row,"One-based national Atlas data row, excluding the header.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,covariate_row_ordinal,integer,row,"One-based national tract-covariate data row, excluding the header.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,outcome_source_present,boolean,,The selected tract-outcome source contains this key.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,model_eligible,boolean,,Both selected estimates are finite and both published standard errors are positive.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,coverage_status,text,,"Complete input, incomplete source row, or covariate key without an outcome row.",Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,income_estimate_missing,boolean,,The selected published estimate is unavailable or nonfinite.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,income_se_missing,boolean,,The selected published standard error is unavailable or nonfinite.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,income_se_nonpositive,boolean,,A finite selected standard error is zero or negative.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,income_negative,boolean,,The observed estimate is negative; missing when no estimate is observed.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,incarceration_estimate_missing,boolean,,The selected published estimate is unavailable or nonfinite.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,incarceration_se_missing,boolean,,The selected published standard error is unavailable or nonfinite.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,incarceration_se_nonpositive,boolean,,A finite selected standard error is zero or negative.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,incarceration_negative,boolean,,The observed estimate is negative; missing when no estimate is observed.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/tract-coverage.csv,exclusion_reason,text,,Reason the tract is excluded from modeling; empty for a complete model input.,Empty/NA means unavailable or not applicable; never substitute zero.
+data/metadata/selection-sensitive-pairs.csv,pair_id,text,pair key,Canonical left and right tract GEOIDs joined by __; one unordered pair per row.,Required; preserve the complete text identifier and any leading zero.
+data/metadata/selection-sensitive-pairs.csv,left_id,text,11-character GEOID,Eleven-character GEOID of the first tract endpoint in canonical order; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/metadata/selection-sensitive-pairs.csv,right_id,text,11-character GEOID,Eleven-character GEOID of the second tract endpoint in canonical order; leading zero retained.,Required; preserve the complete text identifier and any leading zero.
+data/metadata/selection-sensitive-pairs.csv,in_initial_A_screen,logical,,TRUE if the pair belongs to the original initial-A threshold screen; the historical screen is not rerun on fresh results.,No missing values; frozen historical design input.
+data/metadata/selection-sensitive-pairs.csv,in_adopted_A_screen,logical,,TRUE if the pair belongs to the original adopted-A threshold screen; the union of both historical screens is the fixed diagnostic domain.,No missing values; frozen historical design input.
+data/metadata/county-names.csv,county_id,text,5-character FIPS,Five-character Alabama county FIPS code; leading zero retained.,Required for each catalog record.
+data/metadata/county-names.csv,county_name,text,,Official Census county name.,Required for each catalog record.
+data/metadata/pilot-counties.csv,county_id,text,5-character FIPS,County FIPS code in the fixed three-county tract pilot; leading zero retained.,Required for each catalog record.
+data/metadata/pilot-counties.csv,county_name,text,,Name of the pilot county.,Required for each catalog record.
+data/metadata/fit-manifest.csv,fit_id,text,,"Public identifier of the adopted model, computation pool, and criterion.",Required for each catalog record.
+data/metadata/fit-manifest.csv,source_fit_id,text,,"Original adopted production-fit identifier, retained for source attribution.",Required for each catalog record.
+data/metadata/fit-manifest.csv,model_id,text,,"Measurement model identifier: M1, PV-TM1, or a tract sensitivity model.",Required for each catalog record.
+data/metadata/fit-manifest.csv,universe,text,,Modeled source geography: county or tract; distinct from the smaller review universe.,Required for each catalog record.
+data/metadata/fit-manifest.csv,pool,text,,Selection stream A or evaluation stream B; both condition on the same observations.,Required for each catalog record.
+data/metadata/fit-manifest.csv,criterion,text,,"Income or incarceration, fitted in separate computation streams.",Required for each catalog record.
+data/metadata/fit-manifest.csv,seed,integer,,Registered sampling seed for this criterion and pool.,Required for each catalog record.
+data/metadata/fit-manifest.csv,N,integer,entities,"Number of modeled source entities: 67 counties or 1,173 tracts; not the disclosed-pair count.",Required for each catalog record.
+data/metadata/fit-manifest.csv,chains,integer,chains,Number of original sampling chains; four for each adopted fit.,Required for each catalog record.
+data/metadata/fit-manifest.csv,iter_warmup,integer,iterations per chain,Warmup iterations excluded from the distributed native arrays.,Required for each catalog record.
+data/metadata/fit-manifest.csv,iter_sampling,integer,iterations per chain,Retained sampling iterations in each original chain.,Required for each catalog record.
+data/metadata/fit-manifest.csv,thin,integer,iteration interval,Sampling interval; one means no thinning.,Required for each catalog record.
+data/metadata/fit-manifest.csv,draws_relative_path,text,,"Path to the native posterior array, relative to the imported companion dataset root.",Required for each catalog record.
+data/metadata/fit-manifest.csv,metadata_relative_path,text,,"Path to fit metadata, relative to the imported companion dataset root.",Required for each catalog record.
+data/metadata/fit-manifest.csv,coordinates_relative_path,text,,"Path to the original chain and iteration coordinate CSV, relative to the dataset root.",Required for each catalog record.
+data/metadata/fit-manifest.csv,draws_bytes,integer,bytes,Size of the distributed compressed native-array RDS file.,Required for each catalog record.
+data/metadata/fit-manifest.csv,draws_sha256,text,SHA-256,Checksum of the exact distributed native-array RDS bytes.,Required for each catalog record.
+data/metadata/fit-manifest.csv,metadata_sha256,text,SHA-256,Checksum of the exact distributed fit-metadata JSON bytes.,Required for each catalog record.
+data/metadata/fit-manifest.csv,coordinates_sha256,text,SHA-256,Checksum of the exact distributed draw-coordinate CSV bytes.,Required for each catalog record.
+data/metadata/geography-layers.csv,layer,text,,Layer name in the companion GeoPackage and the rep_geo() interface.,Required for each catalog record.
+data/metadata/geography-layers.csv,geography,text,,"Geographic unit represented by each feature: county, tract, block group, or place.",Required for each catalog record.
+data/metadata/geography-layers.csv,vintage,text,,Boundary vintage of the geographic layer.,Required for each catalog record.
+data/metadata/geography-layers.csv,crs,text,,Coordinate reference system of the distributed layer; EPSG:5070.,Required for each catalog record.
+data/metadata/geography-layers.csv,features,integer,features,Number of geographic features retained in the layer.,Required for each catalog record.
+data/metadata/geography-layers.csv,role,text,,Full native layer or drawing layer; drawing layers preserve coverage through documented fallbacks.,Required for each catalog record.
+data/metadata/geography-layers.csv,source_component,text,,Source attribution and description of geometry validation or drawing-layer fallback.,Required for each catalog record.
+data/metadata/geography-sources.csv,source_id,text,,Identifier used to retrieve an official geographic source.,Required for each catalog record.
+data/metadata/geography-sources.csv,filename,text,,Expected local filename of the official ZIP or geographic response.,Required for each catalog record.
+data/metadata/geography-sources.csv,url,text,URL,Official download or query URL for the pinned source.,Required for each catalog record.
+data/metadata/geography-sources.csv,checksum_scope,text,,Whether verification checks the whole source file or each preserved shapefile component.,Required for each catalog record.
+data/metadata/geography-sources.csv,sha256_by_filename,text,JSON map of SHA-256 hashes,JSON object mapping source or component filenames to their expected checksums.,Required for each catalog record.
+data/metadata/geography-sources.csv,member_filename,text,,Shapefile member opened for component-level verification; blank when the whole source file is checked.,Blank when not applicable to the recorded checksum scope.
+data/metadata/geography-sources.csv,note,text,,Explanation of the source checksum scope and any relevant retrieval detail.,Required for each catalog record.
+data/metadata/source-files.csv,source_id,text,,Identifier used by the official-source retrieval functions.,Required for each catalog record.
+data/metadata/source-files.csv,filename,text,,Expected local filename of the official statistical source or workbook.,Required for each catalog record.
+data/metadata/source-files.csv,url,text,URL,Official source URL; downloading requires an explicit request.,Required for each catalog record.
+data/metadata/source-files.csv,bytes,integer,bytes,Size of the pinned original source file.,Required for each catalog record.
+data/metadata/source-files.csv,sha256,text,SHA-256,"Checksum of the exact original source-file bytes, checked before parsing.",Required for each catalog record.
+data/metadata/source-files.csv,role,text,,Purpose of the source in the supplied extracts or their optional rebuild.,Required for each catalog record.
+posterior/<fit_id>/draw_coordinates.csv,fit_id,text,,Public adopted fit identifier; <fit_id> is resolved through data/metadata/fit-manifest.csv.,Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draw_coordinates.csv,source_fit_id,text,,Original adopted production-fit identifier.,Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draw_coordinates.csv,model_id,text,,Measurement model associated with this posterior computation.,Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draw_coordinates.csv,pool,text,,Selection stream A or evaluation stream B; criteria and pools retain separate numerical identities.,Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draw_coordinates.csv,criterion,text,,Income or incarceration criterion for this separate fit.,Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draw_coordinates.csv,chain,integer,chain identifier,"Original sampling-chain identifier, from 1 through 4.",Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draw_coordinates.csv,retained_iteration,integer,iterations,One-based postwarmup iteration within the original chain; no thinning or chain concatenation.,Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draw_coordinates.csv,stan_iteration,integer,iterations,"Actual Stan iteration, equal to iter_warmup plus retained_iteration.",Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draws.rds,array values,numeric array,native fraction,"Plain array of bounded latent targets, ordered by retained iteration, original chain, and complete source entity vector. Income remains in its natural direction; no need-orientation transform is stored.",Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draws.rds,dim,integer vector,iterations by chains by entities,"Array dimensions [iter_sampling, 4, N], as recorded for the fit in the manifest and metadata.",Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draws.rds,dimnames[[1]],character vector,actual Stan iteration labels,Chronological labels from iter_warmup + 1 through iter_warmup + iter_sampling.,Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draws.rds,dimnames[[2]],character vector,original chain labels,"Original chain identifiers 1, 2, 3, and 4.",Required; no missing values in the adopted posterior arrays or their coordinate records.
+posterior/<fit_id>/draws.rds,dimnames[[3]],character vector,native geographic identifiers,"Complete source entity keys in the recorded order: 67 county FIPS codes or 1,173 historical tract GEOIDs; preserve leading zeros.",Required; no missing values in the adopted posterior arrays or their coordinate records.

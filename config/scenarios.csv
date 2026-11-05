@@ -1,0 +1,15 @@
+"order","scenario_id","kind","universe","model_id","selection_pool","evaluation_model","evaluation_pool","weight_income","weight_incarceration","tau","G_max","include_in_tract_8case_stability","n_entities","case_id","solver_seed","solver_time_limit"
+"1","center","policy","county","M1","A","M1","B","0.5","0.5","0.2","5","FALSE","64","county-center",500403847,300
+"2","center","policy","tract","PV-TM1","A","PV-TM1","B","0.5","0.5","0.2","5","TRUE","90","tract-center",1698059249,300
+"3","PV-w25","policy","county","M1","A","M1","B","0.25","0.75","0.2","5","FALSE","64","county-PV-w25",400152239,300
+"4","PV-w25","policy","tract","PV-TM1","A","PV-TM1","B","0.25","0.75","0.2","5","TRUE","90","tract-PV-w25",517816906,300
+"5","PV-w75","policy","county","M1","A","M1","B","0.75","0.25","0.2","5","FALSE","64","county-PV-w75",1738963442,300
+"6","PV-w75","policy","tract","PV-TM1","A","PV-TM1","B","0.75","0.25","0.2","5","TRUE","90","tract-PV-w75",497041402,300
+"7","PV-t10","policy","county","M1","A","M1","B","0.5","0.5","0.1","5","FALSE","64","county-PV-t10",1686427238,300
+"8","PV-t10","policy","tract","PV-TM1","A","PV-TM1","B","0.5","0.5","0.1","5","TRUE","90","tract-PV-t10",133865817,300
+"9","PV-t30","policy","county","M1","A","M1","B","0.5","0.5","0.3","5","FALSE","64","county-PV-t30",1017256534,300
+"10","PV-t30","policy","tract","PV-TM1","A","PV-TM1","B","0.5","0.5","0.3","5","TRUE","90","tract-PV-t30",1859448847,300
+"11","PV-TS1","posterior","tract","PV-TS1","A","PV-TM1","B","0.5","0.5","0.2","5","TRUE","90","tract-PV-TS1",1046415709,300
+"12","PV-TS2","posterior","tract","PV-TS2","A","PV-TM1","B","0.5","0.5","0.2","5","TRUE","90","tract-PV-TS2",760441435,300
+"13","PV-TS3","posterior","tract","PV-TS3","A","PV-TM1","B","0.5","0.5","0.2","5","TRUE","90","tract-PV-TS3",971592782,300
+"14","PV-direction050","exploratory","tract","PV-TM1","A","PV-TM1","B","0.5","0.5","0.2","5","FALSE","90","tract-PV-direction050",610670139,300

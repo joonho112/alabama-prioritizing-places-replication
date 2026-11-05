@@ -1,0 +1,14 @@
+# Local execution records and desktop metadata
+/log/
+.DS_Store
+__MACOSX/
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+*.o
+*.so
+*.exe
+Rplots.pdf
+.Rapp.history

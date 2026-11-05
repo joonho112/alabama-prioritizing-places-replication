@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "author": "JoonHo Lee (jlee296@ua.edu)",
+  "criteria": [
+    "income",
+    "incarceration"
+  ],
+  "need_multiplier": {
+    "income": -100,
+    "incarceration": 100
+  },
+  "policy": {
+    "weights": {
+      "income": 0.5,
+      "incarceration": 0.5
+    },
+    "tau": 0.2,
+    "G_max": 5,
+    "county_exclusions": [
+      "01073",
+      "01097",
+      "01117"
+    ]
+  },
+  "solver": {
+    "backend": "highs",
+    "threads": 1,
+    "time_limit": 300,
+    "center_retry_time_limit": 900,
+    "absolute_risk_gap": 1e-06,
+    "relative_gap": 0,
+    "seed": 20261028
+  },
+  "hmc": {
+    "rhat_max": 1.01,
+    "ess_bulk_min": 400,
+    "ess_tail_min": 400,
+    "divergence_max": 0,
+    "treedepth_hits_max": 0,
+    "bfmi_min": 0.3
+  },
+  "precision": {
+    "pair_mcse_target": 0.005,
+    "fixed_risk_mcse_target": 0.001,
+    "paired_mcse_target": 0.001
+  },
+  "postrank_source": {
+    "path": "vendor/postrank_0.9.0.tar.gz",
+    "sha256": "3f7277ad15edc4ec93f065c62db4653736af973e869d795d36d576fb2c8eda06"
+  },
+  "dataset_manifest": "data/metadata/zenodo-manifest.json"
+}

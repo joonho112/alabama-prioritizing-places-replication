@@ -1,0 +1,7 @@
+fund_section,applications,amount_requested_cents_exact,amount_requested_usd_exact,county_governments,municipal_governments,unknown_or_mixed
+Small City,28,1043796320,10437963.20,0,28,0
+Large City,11,546196000,5461960.00,0,11,0
+County,12,564979690,5649796.90,12,0,0
+Community Enhancement,17,678083000,6780830.00,2,0,15
+Planning,4,14600000,146000.00,0,0,4
+All five sections,72,2847655010,28476550.10,14,39,19

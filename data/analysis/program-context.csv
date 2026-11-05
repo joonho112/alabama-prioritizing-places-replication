@@ -1,0 +1,3 @@
+metric_id,value,unit,fund,program_year,source_id,source_url,source_locator,interpretation
+county_fund_allocation_usd,2793000,USD,County,2026,action-plan-2026,https://adeca.alabama.gov/wp-content/uploads/2026-CDBG-Action-Plan.docx,P0021,"Program budget context; may change; not county quota, project award, total project cost, or study review capacity."
+county_fund_project_ceiling_usd,500000,USD,County,2026,action-plan-2026,https://adeca.alabama.gov/wp-content/uploads/2026-CDBG-Action-Plan.docx,P0157,Maximum requested CDBG grant context; not an observed award or a study review capacity.

@@ -1,0 +1,3 @@
+pool,model_id,n_entities,n_frozen_pairs,n_policies,weighted_rows,finite_weighted_rows,unavailable_weighted_rows,finite_weighted_target_misses,any_criterion_constant_rows,all_criteria_constant_rows,max_finite_weighted_mcse,criterion_diagnostic_target_misses,target_mcse,income_draws,incarceration_draws,criterion_direction_rows_with_ties,precision_status
+A,PV-TM1,90,1993,5,19930,18360,1570,0,1570,0,0.003331464734399524,0,0.005,16000,16000,0,precision_limited
+B,PV-TM1,90,1993,5,19930,18120,1810,0,1810,0,0.004289387218025389,924,0.005,8000,8000,0,precision_limited

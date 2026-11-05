@@ -1,0 +1,24 @@
+% JoonHo Lee (jlee296@ua.edu)
+% Requires booktabs, tabularx, and array.
+\begin{table}[htbp]
+\caption{Population-level parameters of the tract model PV-TM1}
+\label{tab:B-hyper}
+\centering\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Parameter & Income & Incarceration \\
+\midrule
+Statewide level (alpha) & -0.515 [-0.535, -0.494] & -4.133 [-4.243, -4.033] \\
+\addlinespace[0.35em]
+Between-county spread (sigma\_c) & 0.080 [0.063, 0.100] & 0.341 [0.251, 0.443] \\
+\addlinespace[0.35em]
+Within-county tract spread (sigma\_t) & 0.181 [0.173, 0.190] & 0.495 [0.448, 0.544] \\
+\addlinespace[0.35em]
+\bottomrule
+\end{tabularx}
+\par\medskip
+\begin{minipage}{\linewidth}\small
+\textit{Note.} Posterior means and 90\% intervals use 16,000 selection-stream draws per criterion and are on the logit scale. The spreads are standard deviations of latent logits. Entity-level outcome tables use natural points and 95\% intervals instead.
+\end{minipage}
+\end{table}

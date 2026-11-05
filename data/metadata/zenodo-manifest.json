@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "status": "published",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.23984957",
+  "record_id": "23984957",
+  "preprint_doi": "10.5281/zenodo.23966864",
+  "repository": "https://github.com/joonho112/alabama-prioritizing-places-replication",
+  "author": "JoonHo Lee (jlee296@ua.edu)",
+  "files": [
+    {
+      "name": "analytic-data.zip",
+      "bytes": 4345941,
+      "sha256": "3ca5c787846b98ce15defd283b22501571faca114580bd5b9f21796709ea103b",
+      "url": "https://zenodo.org/records/23984957/files/analytic-data.zip?download=1",
+      "contents": [
+        "DATA-SOURCES.md",
+        "config/",
+        "data/analysis/",
+        "data/metadata/",
+        "data/saved/"
+      ]
+    },
+    {
+      "name": "posterior-county.zip",
+      "bytes": 27414931,
+      "sha256": "9ef82070bb287908bb82ae2804b87363bdea0a6898934a8ce4fd765bcfd4241e",
+      "url": "https://zenodo.org/records/23984957/files/posterior-county.zip?download=1",
+      "contents": [
+        "M1-A-incarceration",
+        "M1-A-income",
+        "M1-B-incarceration",
+        "M1-B-income"
+      ]
+    },
+    {
+      "name": "posterior-tract-main.zip",
+      "bytes": 422122519,
+      "sha256": "db6a496f3d9d4396a2b56a6ad23f3a0cb9252f6e971211c726210e556ad5093e",
+      "url": "https://zenodo.org/records/23984957/files/posterior-tract-main.zip?download=1",
+      "contents": [
+        "PV-TM1-A-incarceration",
+        "PV-TM1-A-income",
+        "PV-TM1-B-incarceration",
+        "PV-TM1-B-income"
+      ]
+    },
+    {
+      "name": "posterior-tract-sensitivity.zip",
+      "bytes": 565323074,
+      "sha256": "59faf3b83eaf941878062b8a7f2015c6c024a2e90115b4b3946dce8082c93b5f",
+      "url": "https://zenodo.org/records/23984957/files/posterior-tract-sensitivity.zip?download=1",
+      "contents": [
+        "PV-TS1-A-incarceration",
+        "PV-TS1-A-income",
+        "PV-TS2-A-incarceration",
+        "PV-TS2-A-income",
+        "PV-TS3-A-incarceration",
+        "PV-TS3-A-income"
+      ]
+    },
+    {
+      "name": "geographic-inputs.zip",
+      "bytes": 79428875,
+      "sha256": "05e9cc4ea9dbf572fe3cf6112ee0b2b3bf890fc64b39d0c1275fcba91b8e4048",
+      "url": "https://zenodo.org/records/23984957/files/geographic-inputs.zip?download=1",
+      "contents": [
+        "geo/geography.gpkg"
+      ]
+    }
+  ]
+}

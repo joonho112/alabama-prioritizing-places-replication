@@ -1,0 +1,47 @@
+% JoonHo Lee (jlee296@ua.edu)
+% Requires booktabs, tabularx, and array.
+\begin{table}[htbp]
+\caption{Reporting rules under equal criterion weights, withholding cost .20, and at most five bands}
+\label{tab:D-comparators}
+\centering\small
+\renewcommand{\arraystretch}{1.2}
+\textit{Counties: 64 candidates, 2,016 pairs}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Rule & Disclosed pairs & Bands & Loss on B (MCSE) & Excess loss vs P (paired MCSE) \\
+\midrule
+B0 & 0 & 1 & 0.2000 (0) & 0.0495 (0.0001) \\
+\addlinespace[0.35em]
+B1 & 1,638 & 5 & 0.1798 (0.00013) & 0.0293 (8.6e-05) \\
+\addlinespace[0.35em]
+B2 & 1,482 & 4 & 0.1761 (0.00012) & 0.0257 (7.3e-05) \\
+\addlinespace[0.35em]
+B3 & 1,115 & 4 & 0.1505 (0.0001) & 0.0000 (0) \\
+\addlinespace[0.35em]
+P & 1,115 & 4 & 0.1505 (0.0001) & -- \\
+\addlinespace[0.35em]
+\bottomrule
+\end{tabularx}
+\par\medskip
+\textit{Tracts: 90 candidates, 4,005 pairs}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Rule & Disclosed pairs & Bands & Loss on B (MCSE) & Excess loss vs P (paired MCSE) \\
+\midrule
+B0 & 0 & 1 & 0.2000 (0) & 0.0211 (8.9e-05) \\
+\addlinespace[0.35em]
+B1 & 2,916 & 4 & 0.2159 (0.00015) & 0.0370 (0.00012) \\
+\addlinespace[0.35em]
+B2 & 3,240 & 5 & 0.2232 (0.00015) & 0.0443 (0.00012) \\
+\addlinespace[0.35em]
+B3 & 1,553 & 3 & 0.1789 (8.9e-05) & 0.0000 (0) \\
+\addlinespace[0.35em]
+P & 1,553 & 3 & 0.1789 (8.9e-05) & -- \\
+\addlinespace[0.35em]
+\bottomrule
+\end{tabularx}
+\par\medskip
+\begin{minipage}{\linewidth}\small
+\textit{Note.} B0 withholds all comparisons. B1 uses published-estimate rank quintiles, B2 posterior-mean rank quintiles, B3 optimal cuts of posterior expected ranks, and P the unrestricted common report. Stream B evaluates fixed reports. Loss includes wrong disclosed directions and withheld comparisons; it is not an error probability. In the archived central results, B3 and P have the same pair relations and their paired difference is exactly zero. Undefined MCSEs remain missing.
+\end{minipage}
+\end{table}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying article when using this compendium."
+title: "Replication package for Prioritizing Places under Uncertainty"
+authors:
+  - family-names: Lee
+    given-names: JoonHo
+    email: jlee296@ua.edu
+    orcid: "https://orcid.org/0009-0006-4019-8703"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/joonho112/alabama-prioritizing-places-replication"
+preferred-citation:
+  type: article
+  title: "Prioritizing Places under Uncertainty: Historical Opportunity Indicators and the Order of Community Development Review in Alabama"
+  authors:
+    - family-names: Lee
+      given-names: JoonHo
+  year: 2026
+  doi: "10.5281/zenodo.23966864"

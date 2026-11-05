@@ -1,0 +1,15 @@
+fit_id,source_fit_id,model_id,universe,pool,criterion,seed,N,C,latent_structure,latent_branch,rho,se_multiplier,alpha_loc,alpha_scale,sigma_county_scale,sigma_tract_scale,chains,iter_warmup,iter_sampling,thin,parallel_chains,threads_per_chain,adapt_delta,max_treedepth,sig_figs,save_warmup
+M1-A-income,M1__A-extension__income__attempt-001,M1,county,A,income,20265127,67,67,1,single_level_ncp,0,1,-0.405465108108164,1.5,0.5,1,4,1000,4000,1,2,1,0.95,12,18,False
+M1-A-incarceration,M1__A-extension__incarceration__attempt-001,M1,county,A,incarceration,20265227,67,67,1,single_level_ncp,0,1,-3.47609868983527,1.5,0.5,1,4,1000,4000,1,2,1,0.95,12,18,False
+M1-B-income,M1__B__income__attempt-001,M1,county,B,income,20263127,67,67,1,single_level_ncp,0,1,-0.405465108108164,1.5,0.5,1,4,1000,2000,1,2,1,0.95,12,18,False
+M1-B-incarceration,M1__B__incarceration__attempt-001,M1,county,B,incarceration,20263227,67,67,1,single_level_ncp,0,1,-3.47609868983527,1.5,0.5,1,4,1000,2000,1,2,1,0.95,12,18,False
+PV-TM1-A-income,PV-TM1__A__income__attempt-002,PV-TM1,tract,A,income,729115249,1173,67,2,county_marginalized_eta,0,1,-0.405465108108164,1.5,0.5,1,4,1000,4000,1,2,1,0.99,15,18,False
+PV-TM1-A-incarceration,PV-TM1__A__incarceration__attempt-002,PV-TM1,tract,A,incarceration,2025480048,1173,67,2,county_marginalized_eta,0,1,-3.47609868983527,1.5,0.5,1,4,1000,4000,1,2,1,0.99,15,18,False
+PV-TM1-B-income,PV-TM1__B__income__attempt-001,PV-TM1,tract,B,income,1337230606,1173,67,2,county_marginalized_eta,0,1,-0.405465108108164,1.5,0.5,1,4,1000,2000,1,2,1,0.99,15,18,False
+PV-TM1-B-incarceration,PV-TM1__B__incarceration__attempt-001,PV-TM1,tract,B,incarceration,225618261,1173,67,2,county_marginalized_eta,0,1,-3.47609868983527,1.5,0.5,1,4,1000,2000,1,2,1,0.99,15,18,False
+PV-TS1-A-income,PV-TS1__A__income__attempt-001,PV-TS1,tract,A,income,578348577,1173,67,1,single_level_ncp,0,1,-0.405465108108164,1.5,0.5,1,4,1000,2000,1,2,1,0.99,15,18,False
+PV-TS1-A-incarceration,PV-TS1__A__incarceration__attempt-001,PV-TS1,tract,A,incarceration,1126606212,1173,67,1,single_level_ncp,0,1,-3.47609868983527,1.5,0.5,1,4,1000,2000,1,2,1,0.99,15,18,False
+PV-TS2-A-income,PV-TS2__A__income__attempt-001,PV-TS2,tract,A,income,1264659897,1173,67,2,county_marginalized_eta,0,1.25,-0.405465108108164,1.5,0.5,1,4,1000,2000,1,2,1,0.99,15,18,False
+PV-TS2-A-incarceration,PV-TS2__A__incarceration__attempt-002,PV-TS2,tract,A,incarceration,682011569,1173,67,3,county_tract_ncp,0,1.25,-3.47609868983527,1.5,0.5,1,4,1000,4000,1,2,1,0.99,15,18,False
+PV-TS3-A-income,PV-TS3__A__income__attempt-001,PV-TS3,tract,A,income,1752112698,1173,67,2,county_marginalized_eta,0.25,1,-0.405465108108164,1.5,0.5,1,4,1000,2000,1,2,1,0.99,15,18,False
+PV-TS3-A-incarceration,PV-TS3__A__incarceration__attempt-002,PV-TS3,tract,A,incarceration,2043566429,1173,67,3,county_tract_ncp,0.25,1,-3.47609868983527,1.5,0.5,1,4,1000,4000,1,2,1,0.99,15,18,False
